@@ -18,7 +18,6 @@
             <div class="card-body">
                 <img src="images/bmi.png" alt="Body Mass Index image">
                 <form method="post" action="{% url 'calculate_bmi' %}">
-                    {% csrf_token %}
                     <label for="weight">Weight (kg): </label>
                     <input type="number" class="form-control" id="weight" name="weight" required step="0.01" title="Enter your weight in kilograms" placeholder="e.g. 70">
                     <label for="height">Height (meters): </label>
