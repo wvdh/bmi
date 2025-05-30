@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>BMI Calculator</h1>
+            </div>
+            <div class="card-body">
+                <img src="images/bmi.png" alt="Body Mass Index image">
+                <form method="post" action="{% url 'calculate_bmi' %}">
+                    {% csrf_token %}
+                    <label for="weight">Weight (kg): </label>
+                    <input type="number" class="form-control" name="weight" required step="0.01" title="Enter your weight in kilograms" placeholder="e.g. 70">
+                    <label for="height">Height (meters): </label>
+                    <input type="number" class="form-control" name="height" required step="0.01" title="Enter your height in meters" placeholder="e.g. 1.75">
+                    <button type="submit">Calculate BMI</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
