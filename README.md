@@ -27,7 +27,7 @@ A simple and responsive web application that allows users to calculate their Bod
 - **Flask** – for setting up the web server and routing
 - **HTML5 & CSS3** – for the frontend
 - **Google Fonts** – for typography
-- **Render** – for hosting and deployment(render.com)
+- **Render** – for hosting and deployment (render.com)
 - **Web App Manifest** – for PWA (Progressive Web App) support
 
 ---
