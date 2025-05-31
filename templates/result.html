@@ -1,3 +1,4 @@
+result_html_content = """
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,19 @@
             <div class="card-footer fade-in">
                 <p>Body Mass Index : {{ bmi }}</p>
                 <p>Interpretation : {{ interpretation }}</p>
+                <form action="/" method="get">
+                    <button type="submit" class="btn">🔁 Nieuwe berekening</button>
+                </form>
             </div>
     </div>
 </body>
 </html>
+""""
+
+
+# Write the updated content to result.html
+with open('result.html', 'w') as file:
+    file.write(result_html_content)
+
+print("De aangepaste versie van result.html is succesvol gegenereerd.")
+# This code generates a new version of the result.html file with the updated content.
