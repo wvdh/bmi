@@ -8,6 +8,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <div class="container">
@@ -16,8 +21,9 @@
                 <h1>BMI Calculator</h1>
             </div>
             <div class="card-body">
-                <img src="images/bmi.png" alt="Body Mass Index image">
+                <img src="assets/bmi.png" alt="Body Mass Index image">
                 <form method="post" action="{% url 'calculate_bmi' %}">
+                    {% csrf_token %}
                     <label for="weight">Weight (kg): </label>
                     <input type="number" class="form-control" id="weight" name="weight" required step="0.01" title="Enter your weight in kilograms" placeholder="e.g. 70">
                     <label for="height">Height (meters): </label>
