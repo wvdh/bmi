@@ -8,13 +8,11 @@ A simple and responsive web application that allows users to calculate their Bod
 
 ---
 
-
-![bmi](https://github.com/user-attachments/assets/38055079-2790-456f-9707-907786b7a2b8)
+![ScreenshotBMI](https://github.com/user-attachments/assets/cdf42f7d-1ec1-4e2c-b72a-133aac8906f7)
 
 ---
 
-🔗 **Live demo**: [bmi-calculator-vgwl.onrender.com](https://bmi-calculator-vgwl.onrender.com/) 
- | _It's a free plan on render.com so it takes a few for the application to start._ 
+🔗 **Live demo**: [bmi-calculator-vgwl.onrender.com](https://bmi-calculator-vgwl.onrender.com/) | _It's a free plan on render.com so it takes a few for the application to start._ 
 
 - Enter your height and weight
 - Get your BMI score and interpretation instantly
