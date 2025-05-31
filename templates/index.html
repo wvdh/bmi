@@ -23,29 +23,14 @@
             <div class="card-body">
                 <img src="static/assets/bmi.png" alt="Body Mass Index image">
                     <form method="post" action="/">
-                    {% csrf_token %}
                     <label for="weight">Weight (kg): </label>
                     <input type="number" class="form-control" id="weight" name="weight" required step="0.01" title="Enter your weight in kilograms" placeholder="e.g. 70">
                     <label for="height">Height (meters): </label>
                     <input type="number" class="form-control" id="height" name="height" required step="0.01" title="Enter your height in meters" placeholder="e.g. 1.75">
-                    <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+                    <button type="submit">Calculate BMI</button>
                 </form>
             </div>
         </div>
     </div>
 </body>
 </html>
-<script>
-function calculateBMI() {
-    let weight = document.getElementById("weight").value;
-    let height = document.getElementById("height").value;
-
-    fetch("https://bmi-calculator.deta.dev/calculate_bmi", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ weight: weight, height: height })
-    })
-    .then(response => response.json())
-    .then(data => alert("BMI: " + data.bmi + "\n" + data.interpretation));
-}
-</script>
