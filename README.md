@@ -8,7 +8,7 @@ A simple and responsive web application that allows users to calculate their Bod
 
 ---
 
-![ScreenshotBMI](https://github.com/user-attachments/assets/cdf42f7d-1ec1-4e2c-b72a-133aac8906f7)
+![ScreenshotBMI](https://github.com/user-attachments/assets/b8b37bdd-a988-447a-848d-e29e02b0cc70)
 
 ---
 
